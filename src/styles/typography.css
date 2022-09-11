@@ -1,11 +1,26 @@
 @font-face {
-  font-family: ("Myriad Pro Regular");
+  font-family: "Myriad Pro";
   font-style: normal;
-  font-weight: normal;
-  src: local("MYRIADPRO-REGULAR.woff") format("woff");
+  font-weight: 400;
+  src: local("Myriad Pro"),
+    url("https://fonts.cdnfonts.com/s/492/MYRIADPRO-REGULAR.woff")
+      format("woff");
 }
 
 body {
   font-family: "Myriad Pro";
+  font-weight: 400;
+}
+.logo h2 {
   font-weight: 300;
+  font-size: 1.4rem;
+}
+.nav-bar__tab {
+  color: #737373;
+}
+.nav-bar__tab:visited {
+  color: none;
+}
+.current-page {
+  color: #2ecc71;
 }

@@ -2,8 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import capitalize from "../utils/capitalize";
 
-export default function NavBarTab({ tabName }) {
+export default function NavBarTab({ tabName, isCurrentPage }) {
+  console.log(isCurrentPage);
   return (
-    <Link to={tabName === "home" ? "/" : tabName}>{capitalize(tabName)}</Link>
+    <Link
+      className={`nav-bar__tab ${isCurrentPage ? "current-page" : ""}`}
+      to={tabName === "home" ? "/" : tabName}
+    >
+      {capitalize(tabName)}
+    </Link>
   );
 }

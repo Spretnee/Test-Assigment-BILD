@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header * {
+  margin: 0;
+}
+header {
+  padding-top: 1em;
+
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+}
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 130px;
+  justify-content: space-between;
+  padding: 0;
+}
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #737373;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+.nav-bar {
+  display: flex;
+  align-self: flex-start;
+  grid-column-start: 1;
+}
+.nav-bar ul {
+  margin: 0;
+  padding: 0 1em 0 0;
+}
+.nav-bar__tab {
+  text-decoration: none;
+}
+.social-media {
+  justify-self: flex-end;
+
+  align-self: flex-end;
+}
+svg:hover {
+  fill: red;
+}
+.separator {
+  border-bottom: 1px solid #dadada;
+  height: 1px;
+  align-self: center;
+  width: 100%;
+  grid-column: 1/4;
+}
+
+.dribbble-svg:hover,
+.dribbble-svg:focus {
+  fill: #ea4c89;
+}
+.gplus-svg:hover,
+.gplus-svg:focus {
+  fill: #db4a39;
+}
+.pinterest-svg:hover {
+  fill: #e60023;
+}
+.webfeed-svg:hover,
+.webfeed-svg:focus {
+  fill: #ee802f;
+}
+.facebook-svg:hover,
+.facebook-svg:focus {
+  fill: #3b5998;
+}
+.twiter-svg:hover,
+.twiter-svg:focus {
+  fill: #00acee;
+}
