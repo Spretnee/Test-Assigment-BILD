@@ -1,5 +1,10 @@
 import React from "react";
+import Navbar from "./NavBar";
 
 export default function Header() {
-  return <h1>Header</h1>;
+  return (
+    <header>
+      <Navbar />
+    </header>
+  );
 }

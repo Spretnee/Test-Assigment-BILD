@@ -1,6 +1,11 @@
 import React from "react";
-import Home from "./pages/Home";
+import { BrowserRouter } from "react-router-dom";
+import MainNavigator from "./components/MainNavigator";
 
 export default function App() {
-  return <Home />;
+  return (
+    <BrowserRouter>
+      <MainNavigator />
+    </BrowserRouter>
+  );
 }
