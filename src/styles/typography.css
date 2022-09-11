@@ -20,6 +20,7 @@ body {
   font-weight: 400;
 }
 .logo h2 {
+  color: #737373;
   font-weight: 300;
   font-size: 1.4rem;
 }
@@ -41,4 +42,11 @@ body {
   font-weight: 300;
   font-size: 1.5rem;
   letter-spacing: 1px;
+}
+.copyright {
+  color: #b5b5b5;
+}
+.nav-bar-footer__tab {
+  color: #dadada;
+  text-decoration: none;
 }
