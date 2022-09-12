@@ -5,7 +5,7 @@ import Services from "../components/Services";
 
 export default function About() {
   return (
-    <main>
+    <main className="about-page">
       <MainTitle title={"ABOUT MY BUSINESS"} />
       <AboutDesctipition />
       <Services />

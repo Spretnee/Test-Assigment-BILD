@@ -1,10 +1,10 @@
-import React from "react";
+import React, { memo } from "react";
 import Navbar from "./NavBar";
 import Logo from "./Logo";
 import SocialMediaLinks from "./SocialMediaLink";
 import Separator from "./Separator";
 
-export default function Header() {
+export default memo(function Header() {
   return (
     <header className="container">
       <Logo />
@@ -13,4 +13,4 @@ export default function Header() {
       <Navbar />
     </header>
   );
-}
+});
