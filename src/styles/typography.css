@@ -50,3 +50,9 @@ body {
   color: #dadada;
   text-decoration: none;
 }
+
+/* about page */
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+}
