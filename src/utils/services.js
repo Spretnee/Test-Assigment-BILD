@@ -1,5 +1,6 @@
 const services = [
   {
+    id: "1",
     name: "websites",
     svg: (
       <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="58px">
@@ -10,8 +11,29 @@ const services = [
         />
       </svg>
     ),
+    text: (
+      <>
+        <ul>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Excepturi dolorem ipsum recusandae.</li>
+          <li>Eos nobis beatae et.</li>
+          <li>Architecto est cumque ipsa?</li>
+          <li>Quo iure eius dolorum!</li>
+          <li>Hic eveniet molestiae nulla?</li>
+        </ul>
+        <ul>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Pariatur impedit molestiae voluptatum?</li>
+          <li>Aliquam sequi numquam debitis.</li>
+          <li>Tempora exercitationem accusamus voluptatem?</li>
+          <li>Assumenda, impedit? Aliquid, cumque.</li>
+          <li>Nulla deserunt eos quidem.</li>
+        </ul>
+      </>
+    ),
   },
   {
+    id: "2",
     name: "photography",
     svg: (
       <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="42px">
@@ -22,8 +44,36 @@ const services = [
         />
       </svg>
     ),
+    text: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+          adipisci ullam culpa maiores veniam eaque voluptate delectus illo
+          molestiae, est aspernatur nobis ab a accusantium recusandae harum
+          accusamus saepe, distinctio quod aliquam natus facilis? Earum vero rem
+          aperiam voluptate at dolorum ducimus quia culpa nulla facere amet
+          veniam nequeW.
+        </p>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugit
+            recusandae nulla omnis explicabo officia laudantium est nemo quidem.
+          </li>
+          <li>
+            Sint reprehenderit vel dolor necessitatibus, porro, ipsa, delectus
+            numquam quia fugit amet libero cumque!
+          </li>
+          <li>
+            Quas perspiciatis earum distinctio architecto ea nihil nobis
+            praesentium rem minima in vel animi soluta non nisi, alias sit rerum
+            sapiente!
+          </li>
+        </ul>
+      </>
+    ),
   },
   {
+    id: "3",
     name: "seo",
     svg: (
       <svg xmlns="http://www.w3.org/2000/svg" width="46px" height="46px">
@@ -34,9 +84,28 @@ const services = [
         />
       </svg>
     ),
+    text: (
+      <>
+        <h1>Lorem ipsum dolor sit</h1>
+        <p>
+          Dolore blanditiis impedit placeat! Ad suscipit, neque harum libero
+          distinctio repellat incidunt accusantium in officiis minus
+          consequuntur nostrum inventore amet! Culpa delectus ex impedit
+          voluptas, consequuntur itaque. Impedit, saepe laudantium.
+        </p>
+        <h1>Distinctio</h1>
+        <p>
+          Pariatur tempora consequatur, blanditiis nihil neque dolores,
+          laboriosam rerum esse voluptate eum repellat sint deserunt harum
+          dignissimos, error aspernatur asperiores reiciendis illum tempore
+          porro vero? Impedit illo ratione praesentium at?
+        </p>
+      </>
+    ),
   },
   {
-    name: "aplications",
+    id: "4",
+    name: "applications",
     svg: (
       <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="43px">
         <path
@@ -46,7 +115,36 @@ const services = [
         />
       </svg>
     ),
+    text: (
+      <>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nostrum
+          nihil aliquid at dolore sit beatae quia hic expedita sapiente qui
+          laboriosam ratione, ad aliquam, vitae delectus totam culpa pariatur!
+        </p>
+        <p>
+          Dolore blanditiis impedit placeat! Ad suscipit, neque harum libero
+          distinctio repellat incidunt accusantium in officiis minus
+          consequuntur nostrum inventore amet! Culpa delectus ex impedit
+          voluptas, consequuntur itaque. Impedit, saepe laudantium.
+        </p>
+        <p>
+          Distinctio nobis obcaecati nulla in vitae. Laboriosam, fugiat
+          recusandae neque nam provident eligendi rerum debitis sequi quasi
+          eveniet autem eius, officiis molestiae, delectus earum similique
+          ratione labore ipsam pariatur? Repellendus!
+        </p>
+        <p>
+          Pariatur tempora consequatur, blanditiis nihil neque dolores,
+          laboriosam rerum esse voluptate eum repellat sint deserunt harum
+          dignissimos, error aspernatur asperiores reiciendis illum tempore
+          porro vero? Impedit illo ratione praesentium at?
+        </p>
+      </>
+    ),
   },
 ];
-
-export { services };
+function getService(name) {
+  return services.find((service) => service.name === name);
+}
+export { services, getService };

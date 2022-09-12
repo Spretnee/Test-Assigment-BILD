@@ -181,6 +181,25 @@ img {
   align-self: center;
   cursor: pointer;
 }
+.service h4,
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .service:hover {
   background-color: #dadada;
+}
+.aplications {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  padding: 1em;
+}
+.photography {
+  list-style-image: url("../utils/linkStyle.svg");
+}
+.websites {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-image: url("../utils/linkStyle.svg");
 }
