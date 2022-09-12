@@ -9,14 +9,12 @@ export default function Navbar() {
     const isCurrentPage = pathname === `/${link === "home" ? "" : link}`;
     const isLastElement = navLinks.length - 1 === index;
     return (
-      <>
-        <NavBarTabFooter
-          key={index}
-          lastElement={isLastElement}
-          isCurrentPage={isCurrentPage}
-          tabName={link}
-        />
-      </>
+      <NavBarTabFooter
+        key={index}
+        lastElement={isLastElement}
+        isCurrentPage={isCurrentPage}
+        tabName={link}
+      />
     );
   });
   return <nav className="nav-bar-footer">{navElement}</nav>;
