@@ -1,13 +1,14 @@
 import React from "react";
 import MainTitle from "../components/MainTitle";
 import Map from "../components/Map";
+import Form from "../components/Form";
 
 export default function Contact() {
   return (
-    <main>
-      <MainTitle title={"GOT A QUESTION OR INQUIRY"} />
+    <main className="contact-page">
+      <MainTitle title={"got a question of inquiry?"} />
       <Map />
-      <h1>Contact Page Content</h1>;
+      <Form />
     </main>
   );
 }

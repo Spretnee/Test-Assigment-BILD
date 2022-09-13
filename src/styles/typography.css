@@ -61,7 +61,9 @@ body {
 .roboto-font {
   font-family: "Roboto", sans-serif;
 }
-.about-page {
+.about-page,
+.contact-page,
+.contact-page input textarea * {
   color: #8a8888;
 }
 .hero-button {
@@ -72,6 +74,22 @@ body {
   font-family: "Novecento WideNormal";
 }
 .about-page p,
+.contact-page p,
 .about-page li {
   font-family: "Roboto";
+}
+/* contact page */
+
+.contact--input[type="text"]::placeholder,
+.contact--input[type="email"]::placeholder {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: #8a8888;
+}
+.contact--input[type="text"],
+.contact--input[type="email"] {
+  font-family: "Roboto";
+
+  font-size: 0.9rem;
+  color: #8a8888;
 }
