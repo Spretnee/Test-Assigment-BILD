@@ -1,29 +1,34 @@
 @font-face {
-  font-family: "Myriad Pro";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Myriad Pro"),
-    url("https://fonts.cdnfonts.com/s/492/MYRIADPRO-REGULAR.woff")
-      format("woff");
-}
-/* @font-face {
-  font-family: "Myriad Pro";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Myriad Pro"),
-    url("https://fonts.cdnfonts.com/s/492/MYRIADPRO-REGULAR.woff")
-      format("woff");
-} */
+  font-family: "Novecento DemiBold";
 
+  src: url("/src/styles/fonts/Novecento\ DemiBold.ttf");
+}
+@font-face {
+  font-family: "Novecento WideNormal";
+
+  src: url("/src/styles/fonts/Novecento\ WideNormal.ttf");
+}
+
+@font-face {
+  font-family: "Novecento HelveticaMedium";
+
+  src: url("/src/styles/fonts/Helvetica\ Neue\ UltraLight.ttf");
+}
 body {
-  font-family: "Myriad Pro";
-  font-weight: 400;
+  font-family: "Novecento DemiBold";
+  font-weight: 300;
+}
+.logo {
+  width: 150px;
+  margin-top: 1em;
 }
 .logo h2 {
   color: #737373;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 18px;
+  margin-left: 6px;
 }
+
 .nav-bar__tab {
   color: #737373;
 }
@@ -58,4 +63,15 @@ body {
 }
 .about-page {
   color: #8a8888;
+}
+.hero-button {
+  font-family: "Novecento DemiBold";
+  font-size: 0.85rem;
+}
+.main-title {
+  font-family: "Novecento WideNormal";
+}
+.about-page p,
+.about-page li {
+  font-family: "Roboto";
 }

@@ -12,7 +12,7 @@ export default function Services() {
     </Link>
   ));
   return (
-    <section>
+    <section className="services-container">
       <div className="container">
         <h3>SERVICES</h3>
       </div>

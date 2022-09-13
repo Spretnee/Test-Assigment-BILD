@@ -8,7 +8,7 @@ export default function Footer() {
       <footer>
         <HeroSectionFooter />
       </footer>
-      <section className="copyright container">
+      <section style={{ fontSize: "0.9rem" }} className="copyright container">
         <p>COPYRIGHT DISPLAY 2013. ALL RIGHTS RESERVED</p>
         <NavbarFooter />
       </section>

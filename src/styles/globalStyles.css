@@ -29,7 +29,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  width: 130px;
+  width: 135px;
   justify-content: space-between;
   padding: 0;
 }
@@ -41,7 +41,7 @@ header {
   height: 50px;
   background: #737373;
   color: white;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 300;
 }
 .nav-bar {
@@ -133,8 +133,8 @@ footer {
   display: flex;
   min-height: 105px;
   color: white;
-  font-size: 1rem;
-  font-family: "Roboto";
+  font-size: 0.9rem;
+
   align-items: center;
 }
 
@@ -202,4 +202,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style-image: url("../utils/linkStyle.svg");
+}
+.services-container {
+  padding-bottom: 2em;
 }
