@@ -5,9 +5,8 @@ import FilterBar from "./workComponents/FilterBar";
 export default function Work() {
   return (
     <main>
-      <MainTitle title={"CHECK OUT WHAT I CAN DO"} />
+      <MainTitle title={"check out what i can do"} />
       <FilterBar />
-      <h1>Work Page Content</h1>;
     </main>
   );
 }

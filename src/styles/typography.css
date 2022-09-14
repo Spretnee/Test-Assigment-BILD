@@ -93,3 +93,14 @@ body {
   font-size: 0.9rem;
   color: #8a8888;
 }
+
+/* work-page */
+
+.work-list-description h2,
+p {
+  color: #737373;
+}
+.work-list-description p {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+}

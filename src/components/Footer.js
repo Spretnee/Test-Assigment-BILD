@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSectionFooter from "./HeroSectionFooter";
-import NavbarFooter from "./NavBarFooter";
+import Navbar from "./NavBar";
+import navLinks from "../utils/navLinks";
 
 export default function Footer() {
   return (
@@ -10,7 +11,8 @@ export default function Footer() {
       </footer>
       <section style={{ fontSize: "0.9rem" }} className="copyright container">
         <p>COPYRIGHT DISPLAY 2013. ALL RIGHTS RESERVED</p>
-        <NavbarFooter />
+
+        <Navbar array={navLinks} hasForwardSlash={true} />
       </section>
     </>
   );
