@@ -1,10 +1,18 @@
 import axios from "axios";
 
-async function getImages() {
-  const response = await axios.get("http://localhost:3000/images");
+async function getImages(filter) {
+  let queryParams = {};
+  if (filter && filter !== "all") {
+    queryParams.type = filter;
+  }
+  const response = await axios.get(
+    "http://localhost:3000/images",
+    queryParams && {
+      params: queryParams,
+    }
+  );
 
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve(response.data), 3000);
-  });
+  return response.data;
 }
+
 export { getImages };
