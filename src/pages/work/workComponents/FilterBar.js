@@ -3,13 +3,30 @@ import grid from "../../../images/gridView.svg";
 import list from "../../../images/listView.svg";
 import filters from "../../../utils/work-filters";
 import Navbar from "../../../components/NavBar";
-import mockData from "../../../utils/mockData";
+import { getImages } from "../../../api/images.js";
 import WorkGrid from "./WorkGrid";
 import WorkList from "./WorkList";
+import Spinner from "../../../components/Spinner";
 
 export default function FilterBar() {
   const [filter, setFilter] = React.useState("grid");
-  console.log(filter);
+  const [data, setData] = React.useState(null);
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    if (!loading && data === null) {
+      setLoading(true);
+      getImages().then((json) => {
+        setData(json);
+        setLoading(false);
+      });
+    }
+  }, []);
+
+  if (loading || data === null) {
+    return <Spinner />;
+  }
+
   return (
     <section style={{ color: "#a9a7a7" }} className="container">
       <div className="work-filter-bar ">
@@ -32,8 +49,8 @@ export default function FilterBar() {
           />
         </div>
       </div>
-      {filter === "grid" && <WorkGrid data={mockData} />}
-      {filter === "list" && <WorkList data={mockData} />}
+      {filter === "grid" && <WorkGrid data={data} />}
+      {filter === "list" && <WorkList data={data} />}
     </section>
   );
 }

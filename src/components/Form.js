@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import Valid from "./Valid";
 import NotValid from "../components/NotValid";
 import InputWrapper from "./InputWrapper";
-import Spinner from "../utils/Spinner";
 import Info from "../components/Info";
 
 function Form() {
