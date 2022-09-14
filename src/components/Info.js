@@ -25,15 +25,23 @@ export default function Info() {
         <p>Marka Markovica 650,Tolosi,Podgorica,Montenegro</p>
       </section>
       <section className="contact-hours">
-        <h2>store hours</h2>
-        <p className="contact-hours__day">Monday to Thursday</p>
-        <p className="contact-hours__day">Friday</p>
-        <p className="contact-hours__day">Saturday</p>
-        <p className="contact-hours__day">{`Sunday & Holidays`}</p>
-        <p className="contact-hours__hours">8 am - 5 pm</p>
-        <p className="contact-hours__hours">8 am - 6 pm</p>
-        <p className="contact-hours__hours">9 am - 5 pm</p>
-        <p className="contact-hours__hours">Closed</p>
+        <h2 className="contact-hours__title title">store hours</h2>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <p className="contact-hours__day day">Monday to Thursday</p>
+          <p className="contact-hours__hours hours">8 am - 5 pm</p>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <p className="contact-hours__day day">Friday</p>
+          <p className="contact-hours__hours hours">8 am - 6 pm</p>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <p className="contact-hours__day day">Saturday</p>
+          <p className="contact-hours__hours hours">9 am - 5 pm</p>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <p className="contact-hours__day day">{`Sunday & Holidays`}</p>
+          <p className="contact-hours__hours hours">Closed</p>
+        </div>
       </section>
     </aside>
   );

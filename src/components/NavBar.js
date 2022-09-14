@@ -1,11 +1,10 @@
 import React from "react";
 import NavBarTab from "./NavBarTab";
-import navLinks from "../utils/navLinks";
 import { useLocation } from "react-router-dom";
-export default function Navbar() {
+export default function Navbar({ array }) {
   const { pathname } = useLocation();
 
-  const navElement = navLinks.map((link, index) => {
+  const navElement = array?.map((link, index) => {
     const isCurrentPage = pathname === `/${link === "home" ? "" : link}`;
     return (
       <ul key={index}>

@@ -3,6 +3,7 @@ import Navbar from "./NavBar";
 import Logo from "./Logo";
 import SocialMediaLinks from "./SocialMediaLink";
 import Separator from "./Separator";
+import navLinks from "../utils/navLinks";
 
 export default memo(function Header() {
   return (
@@ -10,7 +11,7 @@ export default memo(function Header() {
       <Logo />
       <SocialMediaLinks />
       <Separator />
-      <Navbar />
+      <Navbar array={navLinks} />
     </header>
   );
 });
