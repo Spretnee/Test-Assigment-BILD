@@ -1,11 +1,14 @@
 import React from "react";
 import "./introductionVideo.css";
+import playButton from "../../../../images/playButton.svg";
 
 const IntroductionVideo = () => {
   return (
     <section className="introduction-video ">
       <div className="video-section container">
-        <div className="video-wrapper"></div>
+        <div className="video-wrapper">
+          <img src={playButton} alt="play" />
+        </div>
         <h2>get to know us a little better</h2>
         <p>
           <p>

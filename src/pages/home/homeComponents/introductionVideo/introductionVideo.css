@@ -19,6 +19,19 @@
   grid-row: 2;
   margin: 0;
 }
+.video-wrapper {
+  position: relative;
+}
+.video-wrapper img {
+  position: absolute;
+  width: 55px;
+  top: calc(50% - 27px);
+  left: calc(50% - 27px);
+  cursor: pointer;
+}
+.video-wrapper img:hover {
+  width: 60px;
+}
 .video-section {
   display: grid;
   grid-template-columns: auto auto;
