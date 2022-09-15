@@ -1,0 +1,69 @@
+.hero-poster {
+  position: relative;
+  background-image: url(../../../../images/sunburst.png);
+  min-height: 796px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 190%;
+  background-color: #2cc26b;
+
+  width: 100%;
+}
+.hero-poster-cta {
+  position: absolute;
+
+  min-height: 270px;
+  width: 100%;
+  background: #ffffff;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+}
+.hero-poster-cta p {
+  margin-bottom: 2em;
+  color: #b4b3b3;
+  text-align: center;
+}
+.devices-container {
+  max-width: 1000px;
+  max-height: 1000px;
+  padding: 0 2em;
+  margin: 0 auto;
+
+  right: calc(50% - 425px);
+  top: 25%;
+}
+
+.hero-poster-macbook {
+  position: absolute;
+  width: 600px;
+  height: auto;
+
+  top: 30%;
+  left: 30%;
+  z-index: 10;
+}
+.hero-poster-iphone {
+  position: absolute;
+
+  width: 130px;
+  height: auto;
+  left: 57%;
+  bottom: 26.5%;
+  z-index: 20;
+}
+.hero-poster-ipad {
+  position: absolute;
+  width: 330px;
+  height: auto;
+  top: 13%;
+  right: 40%;
+  z-index: 15;
+}
+.cta-flex {
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
