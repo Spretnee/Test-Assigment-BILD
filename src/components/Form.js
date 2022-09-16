@@ -26,7 +26,7 @@ function Form() {
   const watchSubjectInput = watch("subject", "");
   const isValidEmailFormat = watchEmailInput?.match(emailValidationPattern);
   return (
-    <main className="container contact-main">
+    <main className="contact-main container">
       <form onSubmit={handleSubmit(submitData)} className="contact-form">
         <h2>CONTACT FORM</h2>
         <p>
@@ -69,9 +69,7 @@ function Form() {
         </InputWrapper>
         <textarea
           type="text"
-          className="contact--input"
-          rows="14"
-          cols="60"
+          className="contact--input textarea-contact"
           {...register("subject-text")}
         />
 

@@ -1,7 +1,7 @@
 import React from "react";
 export default function Info() {
   return (
-    <aside>
+    <aside className="aside-contact">
       <section className="contact-info">
         <h2>contact info</h2>
         <p>

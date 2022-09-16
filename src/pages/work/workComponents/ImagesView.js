@@ -55,7 +55,7 @@ export default function FilterBar() {
     return (
       <div
         key={index}
-        className="filter-link"
+        className={`filter-link filter-link-${flt}`}
         style={{
           display: "flex",
           alignItems: "center",
@@ -70,7 +70,7 @@ export default function FilterBar() {
         >
           {flt}
         </h3>
-        {!isLastElement && <span>/</span>}
+        {!isLastElement && <span className="forward-slash">/</span>}
       </div>
     );
   });
@@ -83,7 +83,7 @@ export default function FilterBar() {
       className="image-view-container"
     >
       <div className="work-filter-bar ">
-        <div style={{ display: "flex" }}>{filterElement}</div>
+        <div className="work-filters">{filterElement}</div>
 
         <div className="list-grid">
           <img

@@ -13,6 +13,7 @@ const services = [
     ),
     text: (
       <>
+        <h4 className="hidden-title">WEBSITES</h4>
         <ul>
           <li>Lorem ipsum dolor sit.</li>
           <li>Excepturi dolorem ipsum recusandae.</li>
@@ -46,6 +47,7 @@ const services = [
     ),
     text: (
       <>
+        <h4 className="hidden-title">PHOTOGRAPHY</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
           adipisci ullam culpa maiores veniam eaque voluptate delectus illo
