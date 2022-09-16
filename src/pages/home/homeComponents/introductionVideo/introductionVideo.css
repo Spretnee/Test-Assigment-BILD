@@ -37,3 +37,25 @@
   grid-template-columns: auto auto;
   gap: 0 2em;
 }
+@media (max-width: 600px) {
+  .video-section {
+    grid-template-columns: auto;
+  }
+  .video-wrapper {
+    grid-column: 1/-1;
+    grid-row: 1;
+    width: 90%;
+    justify-self: center;
+  }
+  .video-section h2 {
+    grid-row: 2/3;
+    grid-column: 1;
+  }
+  .video-section p {
+    grid-row: 3/4;
+    grid-column: 1;
+  }
+  .cta-flex button {
+    margin: 2em;
+  }
+}

@@ -67,7 +67,8 @@ header {
   text-decoration: none;
 }
 .social-media {
-  justify-self: flex-end;
+  display: flex;
+  justify-self: flex-start;
 
   align-self: flex-end;
 }
@@ -81,29 +82,39 @@ svg:hover {
   width: 100%;
   grid-column: 1/4;
 }
+.social-media-icon {
+  width: 36px;
+  cursor: pointer;
+}
 
 .dribbble-svg:hover,
 .dribbble-svg:focus {
-  fill: #ea4c89;
+  color: #ea4c89;
+  fill: currentColor;
 }
 .gplus-svg:hover,
 .gplus-svg:focus {
-  fill: #db4a39;
+  color: #db4a39;
+  fill: currentColor;
 }
 .pinterest-svg:hover {
-  fill: #e60023;
+  color: #e60023;
+  fill: currentColor;
 }
 .webfeed-svg:hover,
 .webfeed-svg:focus {
-  fill: #ee802f;
+  color: #ee802f;
+  fill: currentColor;
 }
 .facebook-svg:hover,
 .facebook-svg:focus {
-  fill: #3b5998;
+  color: #3b5998;
+  fill: currentColor;
 }
 .twiter-svg:hover,
 .twiter-svg:focus {
-  fill: #00acee;
+  color: #00acee;
+  fill: currentColor;
 }
 
 .hero-button {
@@ -462,4 +473,36 @@ fillwork-image-wrapper .contact-hours * {
 .current-filter {
   color: #2ecc71;
   padding: "0 0.5em";
+}
+
+@media (max-width: 600px) {
+  header {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .social-media {
+    grid-row: 2/3;
+  }
+  .nav-bar {
+    grid-row: 3/4;
+    align-self: center;
+  }
+  .hero-poster-macbook {
+    width: 400px;
+  }
+  .hero-footer {
+    flex-direction: column;
+  }
+  .hero-footer button {
+    margin-bottom: 2em;
+  }
+  .copyright {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .hero-poster-macbook {
+    width: 200px;
+    z-index: 200;
+  }
 }

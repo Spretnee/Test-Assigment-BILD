@@ -9,7 +9,7 @@ export default memo(function Header() {
   return (
     <header className="container">
       <Logo />
-      {/* <SocialMediaLinks /> */}
+      <SocialMediaLinks />
       <Separator />
       <Navbar array={navLinks} />
     </header>
