@@ -5,6 +5,8 @@ import Valid from "./Valid";
 import NotValid from "../components/NotValid";
 import InputWrapper from "./InputWrapper";
 import Info from "../components/Info";
+import Spinner from "./Spinner";
+import ContactSent from "../components/ContactSent";
 
 function Form() {
   const {
@@ -14,19 +16,39 @@ function Form() {
     formState: { errors },
   } = useForm();
 
+  const [formData, setFormData] = React.useState(null);
+  const [isLoading, setIsLoading] = React.useState(false);
+
   const emailValidationPattern =
     /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/g;
 
   const submitData = (data) => {
-    console.log(data);
+    setIsLoading(true);
+    setFormData(data);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
   };
 
   const watchNameInput = watch("fname", "");
   const watchEmailInput = watch("email", "");
   const watchSubjectInput = watch("subject", "");
   const isValidEmailFormat = watchEmailInput?.match(emailValidationPattern);
-  return (
-    <main className="contact-main container">
+
+  const renderContent = () => {
+    if (isLoading) {
+      return (
+        <div className="sent-from contact-form">
+          <Spinner />
+        </div>
+      );
+    }
+
+    if (formData) {
+      return <ContactSent name={formData.fname} />;
+    }
+
+    return (
       <form onSubmit={handleSubmit(submitData)} className="contact-form">
         <h2>CONTACT FORM</h2>
         <p>
@@ -49,7 +71,10 @@ function Form() {
             className="contact--input"
             placeholder="Email Address"
             {...register("email", {
-              pattern: { value: emailValidationPattern, message: <NotValid /> },
+              pattern: {
+                value: emailValidationPattern,
+                message: <NotValid />,
+              },
               required: <NotValid />,
             })}
           />
@@ -68,6 +93,7 @@ function Form() {
           <div>{watchSubjectInput && <Valid />}</div>
         </InputWrapper>
         <textarea
+          maxLength={1000}
           type="text"
           className="contact--input textarea-contact"
           {...register("subject-text")}
@@ -75,6 +101,12 @@ function Form() {
 
         <Button text="send message" />
       </form>
+    );
+  };
+
+  return (
+    <main className="contact-main container">
+      {renderContent()}
       <Info />
     </main>
   );

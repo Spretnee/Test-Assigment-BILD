@@ -274,6 +274,11 @@ a {
   justify-content: space-between;
   width: 380px;
 }
+.sent-from {
+  max-height: 30vh;
+  justify-self: center;
+  align-self: center;
+}
 
 /* spinner */
 .lds-roller {
