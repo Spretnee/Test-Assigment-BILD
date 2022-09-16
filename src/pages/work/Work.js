@@ -1,12 +1,12 @@
 import React from "react";
 import MainTitle from "../../components/MainTitle";
-import FilterBar from "./workComponents/FilterBar";
+import ImageView from "./workComponents/ImagesView";
 
 export default function Work() {
   return (
     <main>
       <MainTitle title={"check out what i can do"} />
-      <FilterBar />
+      <ImageView />
     </main>
   );
 }
