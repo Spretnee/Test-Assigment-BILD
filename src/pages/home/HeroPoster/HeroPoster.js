@@ -1,9 +1,9 @@
 import React from "react";
 import "./heroPoster.css";
-import macbook from "../../../../images/macbook pro.png";
-import iPhone from "../../../../images/iPhone.png";
-import iPad from "../../../../images/iPad.png";
-import Button from "../../../../components/Button";
+import macbook from "../../../images/macbook pro.png";
+import iPhone from "../../../images/iPhone.png";
+import iPad from "../../../images/iPad.png";
+import Button from "../../../components/Button";
 
 const HeroPoster = () => {
   return (

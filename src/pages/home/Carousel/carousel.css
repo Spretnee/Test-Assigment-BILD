@@ -1,5 +1,32 @@
+.carousel {
+  text-align: center;
+  color: #737373;
+}
+.carousel-title {
+  padding: 2em;
+}
+
+.carousel-controls {
+  display: flex;
+  padding: 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-control {
+  cursor: pointer;
+}
+.carousel-control:hover {
+  color: #2ecc71;
+  fill: currentColor;
+}
+
+.carousel p {
+  font-family: "Roboto";
+}
 .carousel-body {
+  display: flex;
   width: 100%;
   min-height: 205px;
-  background-color: grey;
+  justify-content: center;
 }

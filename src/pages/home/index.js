@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
-import Carousel from "./Carousel/Carousel";
-import HeroPoster from "./homeComponents/heroPoster/HeroPoster";
+import Carousel from "./Carousel";
+import HeroPoster from "./HeroPoster/HeroPoster";
 import IntroductionVideo from "./introductionVideo/IntroductionVideo";
 
 export default function Home() {

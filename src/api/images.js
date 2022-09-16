@@ -1,6 +1,6 @@
 import axios from "axios";
 
-async function getImages(filter, page = 1) {
+async function getImages(filter = "all", page = 1) {
   console.log("fetching page", page);
   let queryParams = { _limit: 20, _page: page };
 
