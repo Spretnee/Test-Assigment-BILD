@@ -1,5 +1,6 @@
 import React from "react";
-import WorkImageList from "./WorkListItem";
+import WorkImageList from "../WorkListItem";
+import "./styles.css";
 
 export default function WorkList({ data }) {
   const listElement = data?.map((photo) => {

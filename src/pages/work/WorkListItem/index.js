@@ -1,7 +1,9 @@
 import React from "react";
-import ImageWrapper from "./ImageWrapper";
+import ImageWrapper from "../ImageWrapper";
 import Separator from "../../../components/Separator";
-export default function WorkImageList({ data }) {
+import "./styles.css";
+
+export default function WorkListItem({ data }) {
   return (
     <>
       <div key={data.id} className="work-list__item">

@@ -1,12 +1,12 @@
 import React from "react";
 import "./home.css";
-import Carousel from "./homeComponents/carousel/Carousel";
+import Carousel from "./Carousel/Carousel";
 import HeroPoster from "./homeComponents/heroPoster/HeroPoster";
-import IntroductionVideo from "./homeComponents/introductionVideo/IntroductionVideo";
+import IntroductionVideo from "./introductionVideo/IntroductionVideo";
 
 export default function Home() {
   return (
-    <main className="home">
+    <main>
       <HeroPoster />
       <IntroductionVideo />
       <Carousel />

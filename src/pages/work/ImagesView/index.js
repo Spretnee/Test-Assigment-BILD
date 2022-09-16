@@ -4,12 +4,14 @@ import list from "../../../images/listView.svg";
 import filters from "../../../utils/work-filters";
 
 import { getImages } from "../../../api/images.js";
-import WorkGrid from "./WorkGrid";
-import WorkList from "./WorkList";
+import WorkGrid from "../WorkGrid";
+import WorkList from "../WorkList";
 import Spinner from "../../../components/Spinner";
-import { useQuery, useInfiniteQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 
-export default function FilterBar() {
+import "./styles.css";
+
+export default function ImagesView() {
   const [view, setView] = React.useState("grid");
   const [filter, setFilter] = React.useState("all");
   const wat = useRef();

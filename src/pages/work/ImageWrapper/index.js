@@ -1,5 +1,6 @@
 import React from "react";
-import HoverLink from "./HoverLink";
+import HoverLink from "../HoverLink";
+import "./styles.css";
 
 function ImageWrapper({ photo }) {
   return (

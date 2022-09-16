@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
-import Home from "../pages/home/Home";
-import Work from "../pages/work/Work";
+import Home from "../pages/home";
+import Work from "../pages/work";
 import { Routes, Route } from "react-router-dom";
-import About from "../pages/About";
+import About from "../pages/about";
 import Contact from "../pages/Contact";
 import Footer from "./Footer";
-import Service from "./Service";
+import Service from "../pages/about/Service";
 
 export default function MainNavigator() {
   return (

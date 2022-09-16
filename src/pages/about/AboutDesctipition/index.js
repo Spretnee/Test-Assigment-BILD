@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 export default function AboutDesctipition() {
   return (
@@ -6,7 +7,7 @@ export default function AboutDesctipition() {
       <section className=" content main-info-area ">
         <div className="img-container">
           <img
-            src={require("../images/sposobnizgodni.png")}
+            src={require("../../../images/sposobnizgodni.png")}
             alt="ZgodniPametni"
           />
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
-import { services } from "../utils/services.js";
+import { services } from "../../../utils/services.js";
 import { Link, Outlet } from "react-router-dom";
+import "./styles.css";
 
 export default function Services() {
   const servicesElement = services.map(({ name, svg }) => (

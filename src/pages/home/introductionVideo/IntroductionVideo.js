@@ -1,6 +1,6 @@
 import React from "react";
 import "./introductionVideo.css";
-import playButton from "../../../../images/playButton.svg";
+import playButton from "../../../images/playButton.svg";
 
 const IntroductionVideo = () => {
   return (

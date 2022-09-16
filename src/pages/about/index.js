@@ -1,7 +1,7 @@
 import React from "react";
-import AboutDesctipition from "../components/AboutDesctiption";
-import MainTitle from "../components/MainTitle";
-import Services from "../components/Services";
+import AboutDesctipition from "./AboutDesctipition";
+import MainTitle from "../../components/MainTitle";
+import Services from "./Services";
 
 export default function About() {
   return (

@@ -1,0 +1,26 @@
+[33mfeb6083[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m responsiveness done?
+[33ma724073[m about page responsive
+[33m880c12f[m home page responsive
+[33m9b72e40[m working infinite scroll
+[33m64ef5ca[m before infiite loop
+[33m937ad81[m introduction video done without popup
+[33mc4506f4[m hover link button Done
+[33m7ebe102[m hover link button Done
+[33m2c7dce2[m Hero section Homepage done... No animation yet
+[33mf24ff7e[m filters working ... paging not done yet
+[33mfee7f14[m mock db setup
+[33m3f02632[m work page 60% done
+[33m01d2c6d[m Navbar refactor
+[33mfd4d4ed[m Contact Page Done
+[33m168c05f[m Some styling and font issues resolved
+[33mbeeb7c3[m About Page Done
+[33m82bf29d[m Google Maps added.Contact Page
+[33mddcfeeb[m Service section added ... not routed
+[33me040fb6[m About Description ... grid not fully responsive
+[33m83dc7fa[m Main title is done... haveing issue with adobe font
+[33m679a063[m Footer done ... navigation issues in footer, not optimal css
+[33m8bafb2e[m Unfinished Footer ,adding links next
+[33m6d8c62a[m Header social media icons need polish
+[33mad3e671[m Basic folder structure and routing setup
+[33md85c9d6[m Initial commit
+[33mdf4f8f8[m Initialize project using Create React App
