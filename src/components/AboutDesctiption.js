@@ -41,7 +41,7 @@ export default function AboutDesctipition() {
             similique quo adipisci dolor.
           </p>
         </div>
-        <div>
+        <div className="fan-facts">
           <h3>FUN FACTS </h3>
           <p>
             Et quam deleniti aut minima error sed beatae maxime et labore nemo
