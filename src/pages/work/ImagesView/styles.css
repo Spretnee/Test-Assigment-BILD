@@ -32,10 +32,13 @@
 
 .list-grid img {
   object-fit: fill;
+  cursor: pointer;
 }
 
-.grid-icon svg {
-  fill: #2ecc71;
+.grid-icon {
+  color: #2ecc71;
+  fill: currentColor;
+  cursor: pointer;
 }
 
 .work-image-wrapper img:hover {

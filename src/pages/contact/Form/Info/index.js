@@ -4,13 +4,10 @@ export default function Info() {
     <aside className="aside-contact">
       <section className="contact-info">
         <h2>contact info</h2>
+
         <p>
-          <p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nemo
-              exercitationem error .
-            </p>
-          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nemo
+          exercitationem error .
         </p>
 
         <div className="email-info">
