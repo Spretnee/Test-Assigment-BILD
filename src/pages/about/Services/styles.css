@@ -21,6 +21,9 @@
   width: 100%;
   background-color: #efefef;
 }
+.service h4 {
+  display: none;
+}
 /* media about page */
 @media (min-width: 600px) {
   /* /// */
@@ -51,6 +54,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
   .service h4 {
-    display: block;
+    display: flex;
   }
 }

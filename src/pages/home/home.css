@@ -1,5 +1,3 @@
-@media (max-width: 600px) {
-  .hero-poster-macbook {
-    width: 400px;
-  }
+main {
+  overflow-x: hidden;
 }

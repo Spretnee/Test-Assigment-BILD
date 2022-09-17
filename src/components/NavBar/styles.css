@@ -20,6 +20,10 @@
 .nav-bar__tab {
   text-decoration: none;
 }
+.nav-bar-default__tab {
+  text-decoration: none;
+}
+
 .nav-bar-footer {
   display: flex;
 }

@@ -19,10 +19,8 @@ Open browser and go to 'http://localhost:3001'
 ## TODO
 
 - SEO
-- Mobile first responsiveness
 - reCAPTCHA field
 - Carousel opacity
 - Fix map billing issue
 - Map marker
-- Refactor Contact form 
-- 
+- Video popup not responsive

@@ -2,10 +2,11 @@
   position: relative;
   background-image: url(../../../images/sunburst.png);
   min-height: 796px;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: 190%;
+
   background-color: #2cc26b;
+  overflow-x: hidden;
 
   width: 100%;
 }
@@ -24,36 +25,26 @@
   color: #b4b3b3;
   text-align: center;
 }
-.devices-container {
-  max-width: 1000px;
-
-  padding: 0 2em;
-  margin: 0 auto;
-
-  right: calc(50% - 425px);
-  top: 25%;
-}
 
 .hero-poster-macbook {
   position: absolute;
-  width: 600px;
-  height: auto;
+  width: 280px;
+  top: 46%;
+  right: 9%;
+  z-index: 50;
 
-  top: 30%;
-  left: 25%;
-  z-index: 10;
   opacity: 0;
   animation: opacityFadeIn 2s none;
   animation-fill-mode: forwards;
 }
 .hero-poster-iphone {
   position: absolute;
+  width: 200px;
+  left: 30%;
+  z-index: 0;
+  bottom: 35%;
+  /* /// */
 
-  width: 130px;
-  height: auto;
-  left: 57%;
-  bottom: 26.5%;
-  z-index: 20;
   opacity: 0;
 
   animation: opacityFadeIn 2s none;
@@ -62,11 +53,13 @@
 }
 .hero-poster-ipad {
   position: absolute;
-  width: 330px;
-  height: auto;
-  top: 13%;
+  width: 200px;
+  z-index: 20;
+  top: 29%;
   right: 40%;
-  z-index: 15;
+
+  /* /// */
+
   opacity: 0;
 
   animation: opacityFadeIn 2s none;
@@ -84,33 +77,33 @@
   animation-delay: 6s;
   animation-fill-mode: forwards;
 }
-@media (max-width: 750px) {
+
+@media (min-width: 800px) {
   .hero-poster-macbook {
-    width: 300px;
-    z-index: 200;
-    top: 52%;
-  }
-}
-@media (max-width: 600px) {
-  .hero-poster-macbook {
-    width: 280px;
-    top: 41%;
-    right: 35%;
-    z-index: 50;
+    width: 600px;
+    height: auto;
+
+    top: 30%;
+    left: 25%;
+    z-index: 10;
   }
   .hero-poster-ipad {
-    width: 200px;
-    z-index: 20;
-    top: 25%;
+    width: 330px;
+    height: auto;
+    top: 13%;
+    right: 40%;
+    z-index: 15;
   }
   .hero-poster-iphone {
-    width: 200px;
-    left: 30%;
-    z-index: 0;
-    bottom: 39%;
+    width: 130px;
+    height: auto;
+    left: 57%;
+    bottom: 26.5%;
+    z-index: 20;
   }
   .hero-poster {
-    background-position: center top;
+    background-position: center;
+    background-size: 190%;
   }
 }
 
