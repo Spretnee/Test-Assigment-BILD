@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../../components/Button";
 import { useForm } from "react-hook-form";
-import Valid from "../../../components/Valid";
+import Valid from "./Valid";
 import NotValid from "./NotValid";
 import InputWrapper from "./InputWrapper";
 import Info from "./Info";

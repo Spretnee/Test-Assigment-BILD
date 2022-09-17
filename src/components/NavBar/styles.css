@@ -1,0 +1,30 @@
+.nav-bar-ul {
+  margin: 0;
+  padding: 0 1em 0 0;
+}
+.nav-bar {
+  display: flex;
+  align-self: flex-start;
+  grid-column-start: 1;
+}
+.nav-bar-default {
+  display: flex;
+  align-self: center;
+  justify-self: flex-start;
+}
+.nav-bar-default-ul {
+  margin: 0;
+  padding: 0;
+}
+.nav-bar__tab {
+  text-decoration: none;
+}
+.nav-bar-footer {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .nav-bar {
+    grid-row: 3/4;
+    align-self: center;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import rss from "../../images/socialmedia/rss.svg";
+import rss from "../../../../images/socialmedia/rss.svg";
 
 export default function RssSVG() {
   return (

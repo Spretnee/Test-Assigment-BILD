@@ -1,5 +1,5 @@
 import React from "react";
-import twiter from "../../images/socialmedia/twiter.svg";
+import twiter from "../../../../images/socialmedia/twiter.svg";
 
 export default function TwiterSVG() {
   return (

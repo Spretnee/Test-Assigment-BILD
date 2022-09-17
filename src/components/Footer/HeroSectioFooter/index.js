@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-
+import Button from "../../Button";
+import "./styles.css";
 export default function HeroSectionFooter() {
   return (
     <div className="hero-footer container">

@@ -1,5 +1,5 @@
 import React from "react";
-import pinterest from "../../images/socialmedia/pinterest.svg";
+import pinterest from "../../../../images/socialmedia/pinterest.svg";
 
 export default function PinterestSVG() {
   return (

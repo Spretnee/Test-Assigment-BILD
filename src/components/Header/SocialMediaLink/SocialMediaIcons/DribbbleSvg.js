@@ -1,5 +1,5 @@
 import React from "react";
-import dribbble from "../../images/socialmedia/dribbble.svg";
+import dribbble from "../../../../images/socialmedia/dribbble.svg";
 
 export default function DribbbleSVG() {
   return (

@@ -1,0 +1,12 @@
+.full-width-green {
+  width: 100%;
+  background-color: #2ecc71;
+}
+.main-title {
+  display: flex;
+  min-height: 105px;
+  color: white;
+  font-size: 0.9rem;
+
+  align-items: center;
+}

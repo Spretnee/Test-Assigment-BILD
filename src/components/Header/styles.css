@@ -1,0 +1,57 @@
+header {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+  color: #dadada;
+}
+.social-media {
+  display: flex;
+  justify-self: end;
+
+  align-self: flex-end;
+}
+
+.social-media-icon {
+  width: 36px;
+  cursor: pointer;
+}
+
+.dribbble-svg:hover,
+.dribbble-svg:focus {
+  color: #ea4c89;
+  fill: currentColor;
+}
+.gplus-svg:hover,
+.gplus-svg:focus {
+  color: #db4a39;
+  fill: currentColor;
+}
+.pinterest-svg:hover {
+  color: #e60023;
+  fill: currentColor;
+}
+.webfeed-svg:hover,
+.webfeed-svg:focus {
+  color: #ee802f;
+  fill: currentColor;
+}
+.facebook-svg:hover,
+.facebook-svg:focus {
+  color: #3b5998;
+  fill: currentColor;
+}
+.twiter-svg:hover,
+.twiter-svg:focus {
+  color: #00acee;
+  fill: currentColor;
+}
+@media (max-width: 600px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .social-media {
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: start;
+  }
+}

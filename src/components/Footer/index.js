@@ -1,8 +1,8 @@
 import React from "react";
-import HeroSectionFooter from "./HeroSectionFooter";
-import Navbar from "./NavBar";
-import navLinks from "../utils/navLinks";
-
+import HeroSectionFooter from "./HeroSectioFooter";
+import Navbar from "../NavBar";
+import navLinks from "../../utils/navLinks";
+import "./styles.css";
 export default function Footer() {
   return (
     <>

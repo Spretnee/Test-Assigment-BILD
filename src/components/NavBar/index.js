@@ -1,6 +1,8 @@
 import React from "react";
 import NavBarTab from "./NavBarTab";
 import { useLocation } from "react-router-dom";
+import "./styles.css";
+
 export default function Navbar({ array, hasForwardSlash = false }) {
   const { pathname } = useLocation();
 

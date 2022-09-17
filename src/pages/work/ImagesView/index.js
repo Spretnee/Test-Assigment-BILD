@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import grid from "../../../images/gridView.svg";
 import list from "../../../images/listView.svg";
-import filters from "../../../utils/work-filters";
+import filters from "../../../utils/workFilters";
 
 import { getImages } from "../../../api/images.js";
 import WorkGrid from "../WorkGrid";
@@ -45,7 +45,11 @@ export default function ImagesView() {
   };
 
   if (isLoading) {
-    return <Spinner />;
+    return (
+      <div className="work-page-spiner container">
+        <Spinner />
+      </div>
+    );
   }
 
   const preppedData = data.pages.flatMap((page) => page);

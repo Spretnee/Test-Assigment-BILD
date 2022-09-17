@@ -1,5 +1,5 @@
 import React from "react";
-import facebook from "../../images/socialmedia/facebook.svg";
+import facebook from "../../../../images/socialmedia/facebook.svg";
 
 export default function FacebookSVG() {
   return (

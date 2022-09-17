@@ -1,0 +1,9 @@
+.hero-button {
+  padding: 1em 1.4em;
+
+  color: white;
+  background: #2ecc71;
+
+  text-transform: uppercase;
+  border: none;
+}

@@ -41,6 +41,12 @@
 .work-image-wrapper img:hover {
   z-index: 0;
 }
+.work-page-spiner {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+}
 
 @media (max-width: 600px) {
   .filter-link-print {

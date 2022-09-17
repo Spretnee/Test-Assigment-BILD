@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+  .forward-slash {
+    display: none;
+  }
+  .work-list__item {
+    flex-direction: column;
+  }
+  .list-grid {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

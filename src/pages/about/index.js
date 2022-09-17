@@ -2,6 +2,7 @@ import React from "react";
 import AboutDesctipition from "./AboutDesctipition";
 import MainTitle from "../../components/MainTitle";
 import Services from "./Services";
+import "./styles.css";
 
 export default function About() {
   return (

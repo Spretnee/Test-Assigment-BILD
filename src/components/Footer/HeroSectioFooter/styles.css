@@ -1,0 +1,14 @@
+.hero-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 140px;
+}
+@media (max-width: 600px) {
+  .hero-footer {
+    flex-direction: column;
+  }
+  .hero-footer button {
+    margin-bottom: 2em;
+  }
+}

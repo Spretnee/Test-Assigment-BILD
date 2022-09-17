@@ -1,5 +1,5 @@
 import React from "react";
-import googleplus from "../../images/socialmedia/googleplus.svg";
+import googleplus from "../../../../images/socialmedia/googleplus.svg";
 
 export default function GooglePlusSVG() {
   return (

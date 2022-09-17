@@ -3,8 +3,8 @@ import Slider from "react-slick";
 
 import Slide from "./Slide";
 import { getImages } from "../../../api/images";
-import CarouselLeftSvg from "../../../components/carouselIcons/CarouselLeftSvg";
-import CarouselRightSvg from "../../../components/carouselIcons/CarouselRightSvg";
+import CarouselLeftSvg from "./carouselIcons/CarouselLeftSvg";
+import CarouselRightSvg from "./carouselIcons/CarouselRightSvg";
 import "./carousel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
