@@ -93,8 +93,9 @@
 }
 @media (max-width: 600px) {
   .hero-poster-macbook {
-    width: 300px;
+    width: 280px;
     top: 41%;
+    right: 35%;
     z-index: 50;
   }
   .hero-poster-ipad {

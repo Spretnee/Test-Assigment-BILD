@@ -8,5 +8,6 @@
 @media (max-width: 600px) {
   .copyright {
     flex-direction: column;
+    padding: 1em;
   }
 }
