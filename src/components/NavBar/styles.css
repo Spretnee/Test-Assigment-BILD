@@ -4,8 +4,9 @@
 }
 .nav-bar {
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   grid-column-start: 1;
+  grid-row: 3/4;
 }
 .nav-bar-default {
   display: flex;
@@ -22,9 +23,8 @@
 .nav-bar-footer {
   display: flex;
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .nav-bar {
-    grid-row: 3/4;
     align-self: center;
   }
 }

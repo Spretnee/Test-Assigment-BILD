@@ -9,35 +9,48 @@
   align-self: center;
   cursor: pointer;
 }
-
-.service h4,
-a {
-  text-decoration: none;
-  color: inherit;
+.services {
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .service:hover {
   background-color: #dadada;
 }
-.services-container {
-  padding-bottom: 2em;
-}
-
 .full-width-gray {
   width: 100%;
   background-color: #efefef;
 }
-.services {
-  min-height: 200px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 /* media about page */
-@media (max-width: 600px) {
-  .service h4 {
-    display: none;
+@media (min-width: 600px) {
+  /* /// */
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .service h4,
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .services-container {
+    padding-bottom: 2em;
   }
   .services {
-    min-height: 100px;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .service h4 {
+    display: block;
   }
 }
