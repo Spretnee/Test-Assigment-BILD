@@ -7,12 +7,14 @@ import About from "../pages/about";
 import Contact from "../pages/contact";
 import Footer from "./Footer";
 import Service from "../pages/about/Service";
+import PageNotFound from "./PageNotFound";
 
 export default function MainNavigator() {
   return (
     <>
       <Header />
       <Routes>
+        <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />}>
           <Route path=":service" element={<Service />} />

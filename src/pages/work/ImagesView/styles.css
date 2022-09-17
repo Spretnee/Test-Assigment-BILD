@@ -72,4 +72,7 @@
   .grid-icon {
     margin-bottom: 2em;
   }
+  .filter-link {
+    justify-self: center;
+  }
 }

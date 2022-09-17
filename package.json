@@ -26,7 +26,8 @@
     "json-server": "^0.17.0"
   },
   "scripts": {
-    "start": "set PORT=3001 && react-scripts start",
+    "start:mock-backend": "json-server --watch ./MOCK_DATA.json",
+    "start:frontend": "set PORT=3001 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
