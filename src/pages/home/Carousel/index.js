@@ -33,7 +33,7 @@ const Carousel = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 7,
-    slidesToScroll: 1,
+    slidesToScroll: 6,
     className: "carousel-body",
     ref: sliderRef,
     responsive: [
@@ -62,21 +62,21 @@ const Carousel = () => {
         breakpoint: 1111,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 1300,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 1600,
         settings: {
           slidesToShow: 5,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
         },
       },
     ],

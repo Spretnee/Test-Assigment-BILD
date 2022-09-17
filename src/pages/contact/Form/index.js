@@ -1,12 +1,12 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../../../components/Button";
 import { useForm } from "react-hook-form";
-import Valid from "./Valid";
-import NotValid from "../components/NotValid";
+import Valid from "../../../components/Valid";
+import NotValid from "./NotValid";
 import InputWrapper from "./InputWrapper";
-import Info from "../components/Info";
-import Spinner from "./Spinner";
-import ContactSent from "../components/ContactSent";
+import Info from "./Info";
+import Spinner from "../../../components/Spinner";
+import ContactSent from "./ContactSent";
 
 function Form() {
   const {

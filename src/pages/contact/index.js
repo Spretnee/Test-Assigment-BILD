@@ -1,7 +1,8 @@
 import React from "react";
-import MainTitle from "../components/MainTitle";
-import Map from "../components/Map";
-import Form from "../components/Form";
+import MainTitle from "../../components/MainTitle";
+import Map from "./Map";
+import Form from "./Form";
+import "./styles.css";
 
 export default function Contact() {
   return (

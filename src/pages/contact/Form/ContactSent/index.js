@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Spinner from "./Spinner";
+import Spinner from "../../../../components/Spinner";
 
 export default function ContactSent({ name }) {
   return (

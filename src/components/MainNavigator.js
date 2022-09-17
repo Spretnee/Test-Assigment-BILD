@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "./Header";
 import Home from "../pages/home";
 import Work from "../pages/work";
 import { Routes, Route } from "react-router-dom";
 import About from "../pages/about";
-import Contact from "../pages/Contact";
+import Contact from "../pages/contact";
 import Footer from "./Footer";
 import Service from "../pages/about/Service";
 

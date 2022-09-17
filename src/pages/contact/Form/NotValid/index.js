@@ -1,5 +1,5 @@
 import React from "react";
-import notValid from "../utils/notValidatedICon.svg";
+import notValid from "../../../../utils/notValidatedICon.svg";
 export default function NotValid() {
   return (
     <img
