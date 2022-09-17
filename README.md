@@ -24,3 +24,4 @@ Open browser and go to 'http://localhost:3001'
 - Fix map billing issue
 - Map marker
 - Video popup not responsive
+- Mock images are horrible
