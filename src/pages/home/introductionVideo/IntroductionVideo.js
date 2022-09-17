@@ -1,13 +1,23 @@
 import React from "react";
 import "./introductionVideo.css";
 import playButton from "../../../images/playButton.svg";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import YoutubeVideo from "./YoutubeVideo";
 
 const IntroductionVideo = () => {
   return (
     <section className="introduction-video ">
       <div className="video-section container">
         <div className="video-wrapper">
-          <img src={playButton} alt="play" />
+          <Popup
+            trigger={<img src={playButton} alt="play" />}
+            position="right center"
+          >
+            <div className="video">
+              <YoutubeVideo id={"dQw4w9WgXcQ"} />
+            </div>
+          </Popup>
         </div>
         <h2>get to know us a little better</h2>
         <p>

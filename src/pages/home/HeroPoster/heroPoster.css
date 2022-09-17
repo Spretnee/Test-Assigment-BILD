@@ -43,7 +43,7 @@
   left: 25%;
   z-index: 10;
   opacity: 0;
-  animation: opacityFadeIn 3s none;
+  animation: opacityFadeIn 2s none;
   animation-fill-mode: forwards;
 }
 .hero-poster-iphone {
@@ -56,8 +56,8 @@
   z-index: 20;
   opacity: 0;
 
-  animation: opacityFadeIn 3s none;
-  animation-delay: 6s;
+  animation: opacityFadeIn 2s none;
+  animation-delay: 4s;
   animation-fill-mode: forwards;
 }
 .hero-poster-ipad {
@@ -69,8 +69,8 @@
   z-index: 15;
   opacity: 0;
 
-  animation: opacityFadeIn 3s none;
-  animation-delay: 3s;
+  animation: opacityFadeIn 2s none;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 .cta-flex {
@@ -80,8 +80,8 @@
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  animation: opacityFadeIn 3s none;
-  animation-delay: 9s;
+  animation: opacityFadeIn 2s none;
+  animation-delay: 6s;
   animation-fill-mode: forwards;
 }
 @media (max-width: 750px) {
